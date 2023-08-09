@@ -19,14 +19,8 @@ inline int lua_isstring(lua_State* L, int idx)
     return ((decltype(&lua_isstring))0x0084DF60)(L, idx);
 }
 
-// Convert a Lua value at the given index 'n_param' to a string using lua_State 'state'.
 inline char* ToString(lua_State* state, int n_param)
 {
-    // This function pointer calls the ToString function from address 0x0084E0E0
-    // The first parameter 'state' is the lua_State pointer.
-    // The second parameter 'n_param' is the index of the value to convert to a string.
-    // The third parameter is set to 0, possibly indicating some optional flag or parameter.
-    // The function returns a char pointer to the converted string.
     return ((char* (__cdecl*)(lua_State*, int, int))0x0084E0E0)(state, n_param, 0);
 }
 
