@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d42788fb-58ed-4b2f-9ed3-edaf13e2678c}</ProjectGuid>
+    <RootNamespace>LiumReplica</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;LIUMREPLICA_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;LIUMREPLICA_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;LIUMREPLICA_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;LIUMREPLICA_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Detour.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="g3dlite\Include\G3D\AABox.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Any.h" />
+    <ClInclude Include="g3dlite\Include\G3D\AnyVal.h" />
+    <ClInclude Include="g3dlite\Include\G3D\AreaMemoryManager.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Array.h" />
+    <ClInclude Include="g3dlite\Include\G3D\AtomicInt32.h" />
+    <ClInclude Include="g3dlite\Include\G3D\BinaryFormat.h" />
+    <ClInclude Include="g3dlite\Include\G3D\BinaryInput.h" />
+    <ClInclude Include="g3dlite\Include\G3D\BinaryOutput.h" />
+    <ClInclude Include="g3dlite\Include\G3D\BoundsTrait.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Box.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Box2D.h" />
+    <ClInclude Include="g3dlite\Include\G3D\BumpMapPreprocess.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Capsule.h" />
+    <ClInclude Include="g3dlite\Include\G3D\CollisionDetection.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Color1.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Color1uint8.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Color3.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Color3uint8.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Color4.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Color4uint8.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Cone.h" />
+    <ClInclude Include="g3dlite\Include\G3D\constants.h" />
+    <ClInclude Include="g3dlite\Include\G3D\ConvexPolyhedron.h" />
+    <ClInclude Include="g3dlite\Include\G3D\CoordinateFrame.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Crypto.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Cylinder.h" />
+    <ClInclude Include="g3dlite\Include\G3D\debug.h" />
+    <ClInclude Include="g3dlite\Include\G3D\debugAssert.h" />
+    <ClInclude Include="g3dlite\Include\G3D\debugPrintf.h" />
+    <ClInclude Include="g3dlite\Include\G3D\enumclass.h" />
+    <ClInclude Include="g3dlite\Include\G3D\EqualsTrait.h" />
+    <ClInclude Include="g3dlite\Include\G3D\FileSystem.h" />
+    <ClInclude Include="g3dlite\Include\G3D\fileutils.h" />
+    <ClInclude Include="g3dlite\Include\G3D\filter.h" />
+    <ClInclude Include="g3dlite\Include\G3D\format.h" />
+    <ClInclude Include="g3dlite\Include\G3D\G3D.h" />
+    <ClInclude Include="g3dlite\Include\G3D\G3DAll.h" />
+    <ClInclude Include="g3dlite\Include\G3D\g3dfnmatch.h" />
+    <ClInclude Include="g3dlite\Include\G3D\G3DGameUnits.h" />
+    <ClInclude Include="g3dlite\Include\G3D\g3dmath.h" />
+    <ClInclude Include="g3dlite\Include\G3D\GCamera.h" />
+    <ClInclude Include="g3dlite\Include\G3D\GImage.h" />
+    <ClInclude Include="g3dlite\Include\G3D\GLight.h" />
+    <ClInclude Include="g3dlite\Include\G3D\GMutex.h" />
+    <ClInclude Include="g3dlite\Include\G3D\GThread.h" />
+    <ClInclude Include="g3dlite\Include\G3D\GUniqueID.h" />
+    <ClInclude Include="g3dlite\Include\G3D\HashTrait.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Image1.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Image1uint8.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Image3.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Image3uint8.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Image4.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Image4uint8.h" />
+    <ClInclude Include="g3dlite\Include\G3D\ImageFormat.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Intersect.h" />
+    <ClInclude Include="g3dlite\Include\G3D\KDTree.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Line.h" />
+    <ClInclude Include="g3dlite\Include\G3D\LineSegment.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Log.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Map2D.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Matrix.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Matrix2.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Matrix3.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Matrix4.h" />
+    <ClInclude Include="g3dlite\Include\G3D\MemoryManager.h" />
+    <ClInclude Include="g3dlite\Include\G3D\MeshAlg.h" />
+    <ClInclude Include="g3dlite\Include\G3D\MeshBuilder.h" />
+    <ClInclude Include="g3dlite\Include\G3D\NetAddress.h" />
+    <ClInclude Include="g3dlite\Include\G3D\netheaders.h" />
+    <ClInclude Include="g3dlite\Include\G3D\NetworkDevice.h" />
+    <ClInclude Include="g3dlite\Include\G3D\networkHelpers.h" />
+    <ClInclude Include="g3dlite\Include\G3D\ParseError.h" />
+    <ClInclude Include="g3dlite\Include\G3D\PhysicsFrame.h" />
+    <ClInclude Include="g3dlite\Include\G3D\PhysicsFrameSpline.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Plane.h" />
+    <ClInclude Include="g3dlite\Include\G3D\platform.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Pointer.h" />
+    <ClInclude Include="g3dlite\Include\G3D\PointHashGrid.h" />
+    <ClInclude Include="g3dlite\Include\G3D\PointKDTree.h" />
+    <ClInclude Include="g3dlite\Include\G3D\PositionTrait.h" />
+    <ClInclude Include="g3dlite\Include\G3D\PrecomputedRandom.h" />
+    <ClInclude Include="g3dlite\Include\G3D\prompt.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Quat.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Queue.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Random.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Ray.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Rect2D.h" />
+    <ClInclude Include="g3dlite\Include\G3D\ReferenceCount.h" />
+    <ClInclude Include="g3dlite\Include\G3D\RegistryUtil.h" />
+    <ClInclude Include="g3dlite\Include\G3D\serialize.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Set.h" />
+    <ClInclude Include="g3dlite\Include\G3D\SmallArray.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Sphere.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Spline.h" />
+    <ClInclude Include="g3dlite\Include\G3D\splinefunc.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Stopwatch.h" />
+    <ClInclude Include="g3dlite\Include\G3D\stringutils.h" />
+    <ClInclude Include="g3dlite\Include\G3D\System.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Table.h" />
+    <ClInclude Include="g3dlite\Include\G3D\TextInput.h" />
+    <ClInclude Include="g3dlite\Include\G3D\TextOutput.h" />
+    <ClInclude Include="g3dlite\Include\G3D\ThreadSet.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Triangle.h" />
+    <ClInclude Include="g3dlite\Include\G3D\uint128.h" />
+    <ClInclude Include="g3dlite\Include\G3D\units.h" />
+    <ClInclude Include="g3dlite\Include\G3D\UprightFrame.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Vector2.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Vector2int16.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Vector3.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Vector3int16.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Vector3int32.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Vector4.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Vector4int8.h" />
+    <ClInclude Include="g3dlite\Include\G3D\vectorMath.h" />
+    <ClInclude Include="g3dlite\Include\G3D\WeakCache.h" />
+    <ClInclude Include="g3dlite\Include\G3D\Welder.h" />
+    <ClInclude Include="g3dlite\Include\G3D\WrapMode.h" />
+    <ClInclude Include="g3dlite\Include\G3D\XML.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="lua.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="variableheader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Detour.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="EndScene.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
