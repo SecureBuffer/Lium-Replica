@@ -100,7 +100,6 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 }
 
 
-
 char Buffer[64] = "CustomFunction";
 
 void Graphics::Pulse(LPDIRECT3DDEVICE9 device)
