@@ -16,14 +16,8 @@
     <Filter Include="imgui">
       <UniqueIdentifier>{293f4ad5-0d53-46fd-8836-707996af909f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphics">
-      <UniqueIdentifier>{5276eeed-432a-4faf-ae2c-3df5b51d3387}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Detour">
-      <UniqueIdentifier>{84849026-910b-48df-9a1f-39f8b4ff8775}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Detour\Detours">
-      <UniqueIdentifier>{bf8e62aa-bc19-4eb2-ac25-8cebada35724}</UniqueIdentifier>
+    <Filter Include="TestGUI">
+      <UniqueIdentifier>{c332dc9b-8d4b-431d-877b-c151af2ae68b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -414,17 +408,23 @@
     <ClInclude Include="imgui\imstb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics.h">
-      <Filter>Graphics</Filter>
+    <ClInclude Include="Detours\include\detours.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Detour.h">
-      <Filter>Detour</Filter>
+    <ClInclude Include="Detours\include\detver.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="variableheader.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Detours\include\syelog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestImgui\Drawing.h">
+      <Filter>TestGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TestImgui\Hook.h">
+      <Filter>TestGUI</Filter>
     </ClInclude>
     <ClInclude Include="lua.h">
-      <Filter>Graphics</Filter>
+      <Filter>TestGUI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -455,14 +455,14 @@
     <ClCompile Include="imgui\imgui_widgets.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics.cpp">
-      <Filter>Graphics</Filter>
+    <ClCompile Include="TestImgui\Drawing.cpp">
+      <Filter>TestGUI</Filter>
     </ClCompile>
-    <ClCompile Include="Detour.cpp">
-      <Filter>Detour</Filter>
+    <ClCompile Include="TestImgui\Draw.cpp">
+      <Filter>TestGUI</Filter>
     </ClCompile>
-    <ClCompile Include="EndScene.cpp">
-      <Filter>Detour\Detours</Filter>
+    <ClCompile Include="TestImgui\Hook.cpp">
+      <Filter>TestGUI</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
